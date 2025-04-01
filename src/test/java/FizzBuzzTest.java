@@ -13,8 +13,10 @@ class FizzBuzzTest {
             "2,  2",    // Input 2, Expected "2"
             "3,  Fizz", // Input 3, Expected "Fizz"
             "4,  4",    // Input 4, Expected "4"
+            "5,  Buzz", // Input 5, Expected "Buzz"
             "6,  Fizz", // Input 6, Expected "Fizz"
-            "9,  Fizz"  // Input 9, Expected "Fizz"
+            "9,  Fizz",  // Input 9, Expected "Fizz"
+            "10, Buzz"
     })
 
     public final void testFizzBuzz(int input, String expected) {

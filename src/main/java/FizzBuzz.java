@@ -21,6 +21,11 @@ public class FizzBuzz {
                 return "Fizz";
             }
 
+            // Check for divisibility by 5
+            if (number % 5 == 0) {
+                return "Buzz";
+            }
+
             // This simple code handles both 1 and 2 (and other non-Fizz/Buzz cases)
             return String.valueOf(number);
         }
