@@ -15,6 +15,12 @@ public class FizzBuzz {
 //    }
 
         public static String fizzBuzz(int number) {
+
+            // Check for divisibility by 3
+            if (number % 3 == 0) {
+                return "Fizz";
+            }
+
             // This simple code handles both 1 and 2 (and other non-Fizz/Buzz cases)
             return String.valueOf(number);
         }
