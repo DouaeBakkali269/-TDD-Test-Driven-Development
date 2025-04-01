@@ -16,7 +16,8 @@ class FizzBuzzTest {
             "5,  Buzz", // Input 5, Expected "Buzz"
             "6,  Fizz", // Input 6, Expected "Fizz"
             "9,  Fizz",  // Input 9, Expected "Fizz"
-            "10, Buzz"
+            "10, Buzz",
+            "15, Fizz Buzz"
     })
 
     public final void testFizzBuzz(int input, String expected) {
