@@ -6,7 +6,10 @@ public class FizzBuzz {
      * @return "Fizz", "Buzz", "Fizz Buzz", or the number as a String.
      */
     public static String fizzBuzz(int number) {
-        // Initial stub - TDD starts with minimal/no implementation
-        return null;
+        // Simplest code to make the test for 1 pass:
+        if (number == 1) {
+            return "1";
+        }
+        return null; // Still return null for other cases not yet tested
     }
 }
