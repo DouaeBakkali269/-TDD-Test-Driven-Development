@@ -11,7 +11,7 @@ class FizzBuzzTest {
 //    }
 
     @Test
-    public final void testAvecValeurUn() {
+     final void testAvecValeurUn() {
 
         // Arrange (Setup input) - Input is 1
         // Act (Call the method)
@@ -19,6 +19,15 @@ class FizzBuzzTest {
 
         // Assert (Check the result)
         assertEquals("1", res, "Problem with the number 1");
+    }
+
+    @Test
+    public final void testAvecValeurDeux() {
+        // Arrange
+        // Act
+        String res = FizzBuzz.fizzBuzz(2);
+        // Assert
+        assertEquals("2", res, "Problem with the number 2");
     }
 
 }
