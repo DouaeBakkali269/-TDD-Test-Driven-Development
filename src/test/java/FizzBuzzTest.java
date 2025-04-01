@@ -30,6 +30,17 @@ class FizzBuzzTest {
         assertEquals("2", res, "Problem with the number 2");
     }
 
+    @Test
+    public final void testAvecValeurTrois() {
+        String res = FizzBuzz.fizzBuzz(3);
+        assertEquals("Fizz", res, "Problem with the number 3");
+    }
+
+    @Test
+    public final void testAvecMultipleDeTrois() {
+        String res = FizzBuzz.fizzBuzz(6);
+        assertEquals("Fizz", res, "Problem with the number 6");
+    }
+
 }
 
-// Expected :1, Actual :null because the method fizzBuzz() returns null (not implemented yet)
