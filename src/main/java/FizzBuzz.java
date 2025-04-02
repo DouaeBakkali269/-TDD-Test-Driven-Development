@@ -16,6 +16,11 @@ public class FizzBuzz {
 
         public static String fizzBuzz(int number) {
 
+            // Check for divisibility by both 3 and 5
+            if (number % 3 == 0 && number % 5 == 0) {
+                return "Fizz Buzz";
+            }
+
             // Check for divisibility by 3
             if (number % 3 == 0) {
                 return "Fizz";
@@ -25,6 +30,8 @@ public class FizzBuzz {
             if (number % 5 == 0) {
                 return "Buzz";
             }
+
+
 
             // This simple code handles both 1 and 2 (and other non-Fizz/Buzz cases)
             return String.valueOf(number);
