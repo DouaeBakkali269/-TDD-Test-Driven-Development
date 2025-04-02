@@ -16,6 +16,10 @@ public class FizzBuzz {
 
         public static String fizzBuzz(int number) {
 
+            if (number <= 0) { // Let's handle 0 and negative numbers
+                throw new IllegalArgumentException("Input must be a positive integer.");
+            }
+
             // Check for divisibility by both 3 and 5
             if (number % 3 == 0 && number % 5 == 0) {
                 return "Fizz Buzz";

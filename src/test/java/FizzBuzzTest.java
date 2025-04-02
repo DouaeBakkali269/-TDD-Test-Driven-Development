@@ -2,8 +2,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 class FizzBuzzTest {
 
@@ -25,6 +24,13 @@ class FizzBuzzTest {
         assertEquals(expected, res, "Problem with number " + input);
     }
 
+    @Test
+    public final void testAvecZero() {
+        // Assert that executing FizzBuzz.fizzBuzz(0) throws IllegalArgumentException
+        Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
+            FizzBuzz.fizzBuzz(0); // The code that should throw
+        }, "Method should throw IllegalArgumentException for input 0");
+    }
 //    @Test
 //    void test() {
 //        fail("Not yet implemented");
